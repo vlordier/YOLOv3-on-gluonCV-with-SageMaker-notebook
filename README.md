@@ -7,11 +7,13 @@ It returns the newly trained model which can be used on iOS with CoreML.
 
 http://mxnet.incubator.apache.org/api/python/contrib/onnx.html
 
-We fine-tune an existing trained model on our new categories, using [Transfer Learning](https://gluon-cv.mxnet.io/build/examples_detection/finetune_detection.html). 
-First, we get YOLO weights trained on [COCO dataset](http://cocodataset.org/) then [convert to ONNX](https://mxnet.incubator.apache.org/versions/master/tutorials/onnx/super_resolution.html) to import into GluonCV.
-Alternatively, we can start with the pre-trained model yolo3_darknet53_coco from GluonCV Model Zoo running on 608x608 images with a Box AP of 37.0/58.2/40.1
-Then we retrain using MXNET on AWS GPU instance.
-Then we export and convert to CoreML format, ready to be used.
+- We fine-tune an existing trained model on our new categories, using [Transfer Learning](https://gluon-cv.mxnet.io/build/examples_detection/finetune_detection.html). 
+- First, we get YOLO weights trained on [COCO dataset](http://cocodataset.org/) then [convert to ONNX](https://mxnet.incubator.apache.org/versions/master/tutorials/onnx/super_resolution.html) to import into GluonCV.
+- Alternatively, we can start with the pre-trained model [yolo3_darknet53_coco from GluonCV Model Zoo](https://gluon-cv.mxnet.io/api/model_zoo.html#gluoncv.model_zoo.yolo3_darknet53_custom) running on 608x608 images with a Box AP of 37.0/58.2/40.1
+- Then we retrain using MXNET on AWS GPU instance.
+- Then we export and convert to CoreML format, ready to be used.
+
+The model can now be used on device [for instance using such project] (https://github.com/tucan9389/ObjectDetection-CoreML)
 
 
 #### What it does : 
