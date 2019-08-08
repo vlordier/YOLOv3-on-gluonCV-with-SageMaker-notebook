@@ -5,6 +5,8 @@ It returns the newly trained model which can be used on iOS with CoreML.
 
 ### DarkNet Yolov3 > ONNX > GluonCV > ONNX > CoreML
 
+http://mxnet.incubator.apache.org/api/python/contrib/onnx.html
+
 We fine-tune an existing trained model on our new categories, using Transfer Learning. [12]
 First, we get Yolo weights trained on [COCO dataset](http://cocodataset.org/) then [convert to ONNX](https://mxnet.incubator.apache.org/versions/master/tutorials/onnx/super_resolution.html) to import into GluonCV.
 Then we retrain using MXNET on AWS GPU instance.
@@ -16,7 +18,7 @@ Then we export and convert to CoreML format, ready to be used.
 2. [augments your data](https://gluon-cv.mxnet.io/api/data.transforms.html#gluoncv.data.transforms.presets.yolo.YOLO3DefaultTrainTransform)
 2. trains YOLO v3 from a pretrained model ([transfer learning](https://gluon-cv.mxnet.io/build/examples_detection/finetune_detection.html))
 3. deploys a SageMaker endpoint for images or video stream, to test it out with the this webapp [13]
-4. shows nice metrics to evaluate your model
+4. shows nice metrics to evaluate your model 
 5. saves your GluonCV model arteficts to s3
 6. [exports MXNET model artifacts to ONNX](https://github.com/onnx/tutorials/blob/master/tutorials/MXNetONNXExport.ipynb)
 7. [converts ONNX to CoreML](https://github.com/onnx/onnx-coreml)
