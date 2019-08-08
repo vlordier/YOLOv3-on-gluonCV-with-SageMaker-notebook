@@ -13,7 +13,7 @@ http://mxnet.incubator.apache.org/api/python/contrib/onnx.html
 - Then we retrain using MXNET on AWS GPU instance.
 - Then we export and convert to CoreML format, ready to be used.
 
-The model can now be used on device [for instance using such project] (https://github.com/tucan9389/ObjectDetection-CoreML)
+The model can now be used on device for instance [using such project] (https://github.com/tucan9389/ObjectDetection-CoreML)
 
 
 #### What it does : 
