@@ -1,6 +1,6 @@
 # Transfer Learning YOLOv3 on GluonCV using SageMaker notebook and exporting as CoreML
 
-This is a boilerplate to retrain [YOLO v3](https://pjreddie.com/media/files/papers/YOLOv3.pdf) & [see Medium post](https://medium.com/diaryofawannapreneur/yolo-you-only-look-once-for-object-detection-explained-6f80ea7aaa1e) [object detection](https://en.wikipedia.org/wiki/Object_detection) on [Gluon CV](https://gluon-cv.mxnet.io/build/examples_detection/train_yolo_v3.html), based on [Apache MXNnet](https://mxnet.apache.org/) using Amazon AWS SageMaker Notebook Instances (https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html) for Apple iOS [CoreML](https://www.youtube.com/watch?v=T4t73CXB7CU).
+This is a boilerplate to retrain [YOLO v3](https://pjreddie.com/media/files/papers/YOLOv3.pdf) & [see Medium post](https://medium.com/diaryofawannapreneur/yolo-you-only-look-once-for-object-detection-explained-6f80ea7aaa1e) [object detection](https://en.wikipedia.org/wiki/Object_detection) on [Gluon CV](https://gluon-cv.mxnet.io/build/examples_detection/train_yolo_v3.html), based on [Apache MXNET](https://mxnet.apache.org/) using Amazon AWS SageMaker Notebook Instances (https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html) for Apple iOS [CoreML](https://www.youtube.com/watch?v=T4t73CXB7CU).
 It returns the newly trained model which can be used on iOS with CoreML.
 
 ### DarkNet Yolov3 > ONNX > GluonCV > ONNX > CoreML
