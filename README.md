@@ -1,4 +1,4 @@
-# YOLOv3-on-gluonCV-with-SageMaker-notebook
+# Transfer Learning YOLOv3 on GluonCV using SageMaker notebook and exporting as CoreML
 
 This is a boilerplate to retrain a CoreML YOLO v3 [1] & [2] object detection [8] on Gluon CV [4], based on Apache MXNet ([3]) using Amazon AWS SageMaker Notebook Instances [5] 
 It returns the newly trained model which can be used on iOS with CoreML
